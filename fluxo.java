@@ -18,7 +18,17 @@ public class fluxo {
         
         for (i = 0; i <= 5; i++) {
             System.out.println(i);
-        
+
+            try {
+	            	
+                int divisao = i / 0;
+
+            } catch (ArithmeticException ex) {
+                
+                System.out.println("ArithmeticException");
+         
+            }
+             
         }
         System.out.println("End metodo2");
 
