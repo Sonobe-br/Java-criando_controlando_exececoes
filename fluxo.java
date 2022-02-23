@@ -28,7 +28,7 @@ public class fluxo {
                 System.out.println("ArithmeticException");
          
             }
-             
+            //bloco de3 controle de exceções 
         }
         System.out.println("End metodo2");
 
