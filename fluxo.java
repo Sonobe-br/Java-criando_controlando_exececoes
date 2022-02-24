@@ -1,39 +1,42 @@
 
 public class fluxo {
+	
+	 public static void main(String[] args) {
+	        System.out.println("Ini do main");
+	     
+	        try {
+	        	
+	        	metodo1();    	
+	        	
+	        } catch (ArithmeticException | NullPointerException ex) {
+                String msg = ex.getMessage();
+	        	System.out.print ("Exception" + msg);
+	        	ex.printStackTrace();
+	        	
+	        } 
+	        System.out.println("Fim do main");
+	    }
 
-    public static void main (String[] args) {
-            System.out.println("Start main");
-            metodo1();
-            System.out.println("End main");
-        
-        public static class metodo1 () {
-            System.out.println("Start metodo1");
-            metodo2();
-            System.out.println("End metodo1");
+	    private static void metodo1() {
+            System.out.println("Ini do metodo1");
 
-        }
-        
-        public static class metodo2 () {
-            System.out.println("Start metodo2");
-        
-        for (i = 0; i <= 5; i++) {
-            System.out.println(i);
+	        metodo2();
+	        System.out.println("Fim do metodo1");
+	    
+	    }
 
-            try {
-	            	
-                int divisao = i / 0;
-
-            } catch (ArithmeticException ex) {
-                
-                System.out.println("ArithmeticException");
-         
-            }
-            //bloco de3 controle de exceções 
-        }
-        System.out.println("End metodo2");
-
-        }
-
-    }
+	    private static void metodo2() {
+            System.out.println("Ini do metodo2");
+	       
+	        for (int i = 1; i <= 5; i++) {
+	            System.out.println(i);  
+	            //int a = i / 0;
+	            
+	            Conta conta = null;
+	            conta.deposita();
+	        
+	        }
+	        System.out.println("Fim do metodo2");
+	    }
 
 }
