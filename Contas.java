@@ -1,5 +1,5 @@
 
-public class Conta extends fluxo{
+public class Conta extends Fluxo{
 	    
 	void deposita() {
 		
