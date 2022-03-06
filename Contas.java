@@ -1,7 +1,7 @@
 
-public class Conta extends Fluxo{
+public class Contas extends Fluxo{
 	    
-	void deposita() {
+	void deposita() throws exceptiuon {
 		
 		
 	}
